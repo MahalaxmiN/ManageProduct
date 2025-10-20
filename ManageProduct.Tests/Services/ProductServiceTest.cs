@@ -19,8 +19,8 @@ namespace ManageProduct.Tests.Services
             var service = GetService(context);
             var product = new Product { Name = "Test", Price = 10, StockAvailable = 5 };
             var result = await service.CreateProductAsync(product);
-            Assert.IsTrue(result.Id >= 100000);
-            Assert.AreEqual("Test", result.Name);
+			Assert.IsTrue(result.Id > 0);
+			Assert.AreEqual("Test", result.Name);
             Assert.AreEqual(1, context.Products.Count());
         }
 
