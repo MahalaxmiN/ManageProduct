@@ -1,6 +1,6 @@
 # ManageProduct API
 
-A .NET 8 RESTful API for managing products, built with clean architecture, Entity Framework Core, and industry best practices.
+A .NET 8 RESTful API for managing products, built with clean architecture, Entity Framework Core.
 
 ## Features
 - CRUD operations for products
@@ -66,7 +66,7 @@ dotnet test
 - `Repositories/` - Data access
 - `Entities/` - Data models
 - `DTOs/` - Data Transfer Objects
-- `Data/` - EF Core DbContext and migrations
+- `Data/` - EF Core DbContext
 - `Helpers/` - Middleware, error handling
 - `Interfaces/` - Abstractions for services and repositories
 - `ManageProduct.Tests/` - Unit tests (MSTest)
